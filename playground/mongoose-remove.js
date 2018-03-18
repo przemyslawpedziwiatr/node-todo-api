@@ -9,5 +9,9 @@ const {User} = require('./../server/models/user');
 // });
 
 Todo.findByIdAndRemove('5aae3bba836f62aafb5db4e3').then(todo => {
-    console.log(todo);
-})
+    
+});
+
+Todo.findOneAndRemove({ _id: '5aae3bba836f62aafb5db4e3'}).then(todo => {
+    
+});
